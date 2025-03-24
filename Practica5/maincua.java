@@ -1,4 +1,5 @@
 import  java.util.Scanner;
+
 public class maincua {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
@@ -14,10 +15,10 @@ public class maincua {
 
         double discriminante = ecuacion.getDiscriminante();
 
-         if (discriminante > 0) {
-            System.out.printf("La ecuación tiene dos raíces:"+ ecuacion.getRaiz1(), ecuacion.getRaiz2());
+        if (discriminante > 0) {
+            System.out.printf("La ecuación tiene dos raíces: %.4f y %.4f\n", ecuacion.getRaiz1(), ecuacion.getRaiz2());
         } else if (discriminante == 0) {
-            System.out.printf("La ecuación tiene una raíz:"+ ecuacion.getRaiz1());
+            System.out.printf("La ecuación tiene una raíz: %.4f\n", ecuacion.getRaiz1());
         } else {
             System.out.println("La ecuación no tiene raíces reales.");
         }
@@ -25,4 +26,3 @@ public class maincua {
         scanner.close();
     }
 }
-    
