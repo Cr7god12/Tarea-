@@ -27,10 +27,7 @@ class Estadistica {
         return des;
     }
 
-    public void mostrarResultados() {
-        System.out.printf("El promedio es: %.2f\n", Promedio());
-        System.out.printf("La desviación estándar es: %.2f\n",Desviacion());
-    }
+    
 }
 
 
