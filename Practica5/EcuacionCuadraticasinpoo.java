@@ -26,13 +26,14 @@ public class EcuacionCuadraticasinpoo {
         if (discriminante > 0) {
             double raiz1 = getRaiz1(a, b, discriminante);
             double raiz2 = getRaiz2(a, b, discriminante);
-            System.out.println("La ecuación tiene dos raíces: " + raiz1 + " y " + raiz2);
+            System.out.printf("La ecuación tiene dos raíces: %.4f y %.4f\n", raiz1, raiz2);
         } else if (discriminante == 0) {
             double raiz = getRaiz1(a, b, discriminante);
-            System.out.println("La ecuación tiene una raíz: " + raiz);
+            System.out.printf("La ecuación tiene una raíz: %.4f\n", raiz);
         } else {
             System.out.println("La ecuación no tiene raíces reales.");
         }
+
     }
 
     public static void main(String[] args) {
