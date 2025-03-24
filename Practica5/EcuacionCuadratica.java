@@ -27,15 +27,6 @@ class EcuacionCuadratica {
         return raiz2;
     }
 
-    public void mostrarSolucion() {
-        double discriminante = getDiscriminante();
-        if (discriminante > 0) {
-            System.out.println("La ecuación tiene dos raíces: " + getRaiz1() + " y " + getRaiz2());
-        } else if (discriminante == 0) {
-            System.out.println("La ecuación tiene una raíz: " + getRaiz1());
-        } else {
-            System.out.println("La ecuación no tiene raíces reales.");
-        }
-    }
+    
 }
 
